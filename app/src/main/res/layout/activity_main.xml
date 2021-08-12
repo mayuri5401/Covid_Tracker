@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="#141A50">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-40dp"
+            android:contentDescription="virus"
+            android:src="@drawable/ic_virus" />
+
+        <ImageView
+            android:id="@+id/virus1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="virus"
+            android:src="@drawable/ic_virus" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/virus1"
+            android:contentDescription="virus"
+            android:src="@drawable/ic_virus" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:text="@string/Heading"/>
+
+            <TextView
+                android:id="@+id/cname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/rubik_bold"
+                android:text="India"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_size3"
+                app:drawableRightCompat="@drawable/ic_dropdown" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_light"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size0"
+                android:text="Updated at May 22, 2021"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@color/yellow"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/rubik"
+                            android:text="Confirm"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@color/blue_pie"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik"
+                            android:textSize="@dimen/text_size"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/white"
+                            android:text="Active"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@color/green_pie"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik"
+                            android:textSize="@dimen/text_size"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/white"
+                            android:text="Revcovered"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@color/red_pie"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik"
+                            android:textSize="@dimen/text_size"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/white"
+                            android:text="Death"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <org.eazegraph.lib.charts.PieChart
+                    android:id="@+id/pie_chart"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:padding="8dp"
+                    app:egInnerPaddingColor="#141A50"
+                    app:egLegendTextSize="0sp"
+                    app:egUsePieRotation="true"
+                    app:egLegendHeight="0dp"
+                    app:egValueTextSize="0sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="10dp"
+            android:columnCount="2">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/card_width"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="#add8e6"
+                app:strokeColor="@color/black"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="bottom"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:id="@+id/confirmLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="18dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@color/yellow"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik"
+                            android:textSize="@dimen/text_size"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:text="Confirm"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/total_Confirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/rubik_bold"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/title_size" />
+                    <TextView
+                        android:id="@+id/today_Confrim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:textSize="@dimen/text_size"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/black"
+                        android:text=""/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/card_width"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="#add8e6"
+                app:strokeColor="@color/color_primary"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="right"
+                app:strokeWidth="1dp"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="18dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@color/blue_pie"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik"
+                            android:textSize="@dimen/text_size"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:text="Active"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/total_Active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_bold"
+                        android:textSize="@dimen/title_size"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/black"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:textSize="@dimen/text_size"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/black"
+                        android:text=""/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/card_width"
+                app:cardBackgroundColor="#add8e6"
+                android:layout_columnWeight="1"
+                app:strokeColor="@color/color_primary"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="12dp"
+                android:layout_gravity="bottom"
+                app:strokeWidth="1dp"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="18dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@color/green_pie"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik"
+                            android:textSize="@dimen/text_size"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:text="Recovered"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/total_Recovered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_bold"
+                        android:textSize="@dimen/title_size"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/black"
+                        android:text=""/>
+                    <TextView
+                        android:id="@+id/today_Recovered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:textSize="@dimen/text_size"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/black"
+                        android:text=""/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/card_width"
+                android:layout_columnWeight="1"
+                app:strokeColor="@color/color_primary"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#add8e6"
+                android:layout_marginEnd="10dp"
+                android:padding="12dp"
+                android:layout_gravity="right"
+                app:strokeWidth="1dp"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="18dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@color/red_pie"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik"
+                            android:textSize="@dimen/text_size"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:text="Death"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/total_Death"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_bold"
+                        android:textSize="@dimen/title_size"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/black"
+                        android:text=""/>
+                    <TextView
+                        android:id="@+id/today_Death"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:textSize="@dimen/text_size"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/black"
+                        android:text=""/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/card_width"
+                android:layout_columnWeight="1"
+                app:strokeColor="@color/color_primary"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                app:cardBackgroundColor="#add8e6"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="bottom"
+                app:strokeWidth="1dp"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="18dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@color/pink"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik"
+                            android:textSize="@dimen/text_size"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:text="Tests"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/total_Tests"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_bold"
+                        android:textSize="@dimen/title_size"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/black"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:textSize="@dimen/text_size"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/black"
+                        android:text=""/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
